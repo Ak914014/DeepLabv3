@@ -3,7 +3,7 @@ import React from 'react';
 
 const ImageComponent = ({ image }) => {
   return (
-    <div className=" mt-2 h-full p-4 border-2 border-gray-300 rounded-lg">
+    <div className=" mt-2 h-4/5 p-4 border-2 border-gray-300 rounded-lg">
       {image ? (
         <img src={image} alt="Uploaded" className="w-full h-full object-cover mb-4" />
       ) : (
