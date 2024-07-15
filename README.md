@@ -1,3 +1,4 @@
 ## DeepLab V3
 
-![image](https://github.com/user-attachments/assets/291d4df2-9075-44fb-bb3d-5913eee960fd)
+
+![Screenshot (546)](https://github.com/user-attachments/assets/d714a967-48a4-49f0-9dc2-54b3bb81c524)
