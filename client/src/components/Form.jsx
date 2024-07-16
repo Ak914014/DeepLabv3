@@ -11,12 +11,16 @@ const Form = ({ setImage }) => {
   const [errorMessage, setErrorMessage] = useState("");
   const canvasRef = useRef(null);
 
+/**
+ * The function `handleImageChange` sets the selected file, uploaded image, and error message based on
+ * the input file.
+ */
   const handleImageChange = (e) => {
     const file = e.target.files[0];
     if (file) {
       setSelectedFile(file);
       setUploadedImage(URL.createObjectURL(file));
-      setErrorMessage(""); // Clear error message on new selection
+      setErrorMessage(""); 
     }
   };
 
