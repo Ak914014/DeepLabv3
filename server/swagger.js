@@ -7,7 +7,7 @@ const options = {
     info: {
       title: 'Image Segmentation API',
       version: '1.0.0',
-      description: 'API for uploading images and performing segmentation using DeepLab models.',
+      description: 'API for uploading and segmenting images using TensorFlow.js and DeepLab models',
     },
     servers: [
       {
@@ -15,13 +15,11 @@ const options = {
       },
     ],
   },
-  apis: ['./index.js'], // Path to the API docs
+  apis: ['./Routes/*.js'], // Path to the API docs
 };
 
-const swaggerSpec = swaggerJsdoc(options);
+const specs = swaggerJsdoc(options);
 
-const setupSwagger = (app) => {
-  app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+module.exports = (app) => {
+  app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
 };
-
-module.exports = setupSwagger;

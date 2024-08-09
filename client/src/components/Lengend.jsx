@@ -1,5 +1,11 @@
 import React from 'react';
 
+/**
+ * Component to display the legend of segmentation map.
+ * @param {Object} props - Component props.
+ * @param {Object} props.legend - Legend object containing class names and their corresponding colors.
+ * @returns {JSX.Element} Legend component.
+ */
 const Legend = ({ legend = {} }) => {
   return (
     <div className="  ">
